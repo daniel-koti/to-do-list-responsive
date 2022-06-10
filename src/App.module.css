@@ -1,0 +1,105 @@
+.container {
+  width: min(75rem, 100%);
+  margin: -2.8rem auto;
+  padding: 0 1.6rem;
+}
+
+.tasksContainer header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2.4rem;
+}
+
+.tasksContainer header p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.tasksContainer header p:first-child {
+  color: var(--blue);
+}
+
+.tasksContainer header p:nth-child(2) {
+  color: var(--purple);
+}
+
+.tasksContainer header span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gray-200);
+  background: var(--gray-400);
+
+  padding: .2rem .8rem;
+  border-radius: 99rem;
+}
+
+.container form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 9rem;
+  gap: .8rem;
+
+  margin-bottom: 6.4rem;
+}
+
+.container form input {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: .8rem;
+  padding: 1.6rem;
+  color: var(--gray-100);
+  outline: none;
+}
+
+.container form input::placeholder {
+  color: var(--gray-300);
+}
+
+.container form input:focus {
+  border: 1px solid var(--purple-dark);
+}
+
+.container form button {
+  padding: 1.6rem;
+  cursor: pointer;
+  border: none;
+  border-radius: .8rem;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background .2s;
+}
+
+.container form button:hover {
+  background: var(--blue);
+}
+
+.tasksContainer form button svg {
+  margin-left: .8rem;
+}
+
+.clipboard {
+  padding: 6.4rem 0;
+  text-align: center;
+  border-top: 1px solid #333;
+  border-radius: .8rem;
+}
+
+.clipboard h3 {
+  color: var(--gray-300);
+  line-height: 2.6rem;
+  font-size: 1.6rem;
+}
+
+.clipboard p {
+  color: var(--gray-300);
+}
