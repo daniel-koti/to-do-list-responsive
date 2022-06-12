@@ -15,10 +15,10 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-React.js
-Typescript
-CSS Modules
-Phosphor icons
+- React.js
+- Typescript
+- CSS Modules
+- Phosphor icons
 
 ## 💻 Projeto
 
