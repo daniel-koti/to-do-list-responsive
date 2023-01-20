@@ -47,8 +47,6 @@ input[type="checkbox"]::before {
   transform: translate(-50%, -50%);
 }
 
-
-
 input[type="checkbox"]:checked::before {
   width: 1.6rem;
   background-image: url('../assets/check.svg');

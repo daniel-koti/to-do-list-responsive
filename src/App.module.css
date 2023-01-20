@@ -76,7 +76,7 @@
   align-items: center;
   justify-content: center;
 
-  gap: .8rem;
+  gap: .8 rem;
 
   transition: background .2s;
 }
