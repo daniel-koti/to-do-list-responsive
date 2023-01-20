@@ -19,7 +19,7 @@ function App() {
   const [tasks, setTasks] = useState<TaskProps []>([]);
   const [newTask, setNewTask] = useState('');
 
-  const [tasksFinished, setTasksFinished] = useState<TaskProps []>([]);
+  const tasksFinished = tasks.filter(task => task.isFinished)
   
   function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>) {
     event.target.setCustomValidity('');
@@ -41,32 +41,29 @@ function App() {
         isFinished: false,
       }
 
-      setTasks([...tasks, task]);
+      setTasks((state) => {
+        return [...state, task]
+      })
       setNewTask('');
     } 
   }
 
   function deleteTask(id: number) {
     const newTasks = tasks.filter(item => item.id !== id);
-    const tasksFinished = newTasks.filter(item => item.isFinished);
 
     setTasks([...newTasks]);
-    setTasksFinished([...tasksFinished]);
   }
 
   function changeTask(id: number) {
-    const updateTasks = tasks;
-
-    for (let task of updateTasks) {
+    const updatedTasks = tasks.map(task => {
       if (task.id === id) {
         task.isFinished = !task.isFinished;
       }
-    }
 
-    const tasksFinished = updateTasks.filter(item => item.isFinished);
-
-    setTasks([...updateTasks]);
-    setTasksFinished([...tasksFinished]);
+      return task
+    })
+  
+    setTasks([...updatedTasks]);
   }
 
   return (
