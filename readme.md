@@ -22,7 +22,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Objectivo da aplicação é construir uma lista de Todo para treinar conceitos como Gerenciamento de estado, imutabilidade, listas e chaves, propriedades e componentização no React. 💰
+O Objectivo da aplicação é construir uma lista de Todo para treinar conceitos como:
+- Gerenciamento de estado
+- Imutabilidade
+- Listas e keys 
+- Propriedades e componentização no React. 
+- Closures
+- Typescript
+- Responsividade
+- Estilização de componentes HTML
+- Boas práticas no React
 
 ---
 
