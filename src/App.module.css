@@ -105,3 +105,9 @@
 .clipboard p {
   color: var(--gray-300);
 }
+
+@media (max-width: 380px) { 
+  .container form {
+    grid-template-columns: 1fr;
+  }
+}

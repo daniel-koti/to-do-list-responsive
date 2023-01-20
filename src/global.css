@@ -41,3 +41,10 @@ ul, ol, li, a {
   text-decoration: none;
   list-style: none;
 }
+
+@media (max-width: 520px) {
+  html {
+    font-size: 58.2%;
+  }
+}
+
